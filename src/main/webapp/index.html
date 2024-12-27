@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciamento de Usuários e Mensagens</title>
+</head>
+<body>
+<h1>Aplicativo exemplo de uso de EJB</h1>
+
+<h2>Gerenciar Usuários</h2>
+<form action="usuario.do" method="GET">
+    Id: <input name="id"><br>
+    Nome: <input name="nome">
+    <input type="hidden" name="oper" value="1" />
+    <button>Inserir Usuário</button>
+</form>
+<br>
+<form action="usuario.do" method="GET">
+    <input type="hidden" name="oper" value="2" />
+    <button>Listar Usuários</button>
+</form>
+
+<h2>Gerenciar Mensagens</h2>
+<form action="mensagem.do" method="GET">
+    Id: <input name="id"><br>
+    Texto: <input name="texto">
+    <input type="hidden" name="oper" value="1" />
+    <button>Inserir Mensagem</button>
+</form>
+<br>
+<form action="mensagem.do" method="GET">
+    <input type="hidden" name="oper" value="2" />
+    <button>Listar Mensagens</button>
+</form>
+</body>
+</html>
